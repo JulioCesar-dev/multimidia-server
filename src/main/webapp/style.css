@@ -1,0 +1,60 @@
+body, html, main {
+	height: 100%;
+	color: rgba(0,0,0,.9);
+}
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  margin-top: 57px;
+  border-right: 1px solid #e3e3e3;
+  display: none;
+}
+
+.sidenav ul {
+	list-style-type: none;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgba(0,0,0,.9);
+  display: inline !important;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .fas {
+	width: 5px;
+}
+
+.sidenav .fab {
+	width: 5px;
+}
+
+.nav-item:hover {
+	background-color: #f8f9fa;
+}
+
+video, audio {
+	width: 100%;
+	border: 1px solid black;
+}
+
+.card:hover {
+	cursor: pointer;
+}
+
+.toast {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}

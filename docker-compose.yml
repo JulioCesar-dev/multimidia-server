@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  multimedia:
+    build: .
+    ports: 
+      - 8080:8080
+    environment:
+      DATABASE_URL: "jdbc:postgresql://postgres:5432/postgres"
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: 1
+      MEDIA_DIR: /multimedias
+  postgres:
+    image: postgres:12
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1
+    ports: 
+      - 5432:5432
